@@ -1,0 +1,220 @@
+:root {
+    --title-font: 'Roboto', sans-serif;
+    --primery-brand-color: #4D5AE5;
+    --pressed-state-color: #404BBF;
+    --dark-color: #2E2F42;
+    --success-color: #31D0AA;
+    --body-text-color: #434455;
+    --helper-text-color: #8E8F99;
+    --accent-color: #E7E9FC;
+    --light-color: #F4F4FD;
+    --modal-overlay-color: #2E2F42;
+    --hero-background-color: #2E2F42;
+    --white-background-color: #FFFFFF;
+    --modal-background: #FCFCFC;
+}
+
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style: none;
+}
+
+.link-logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: var(--primery-brand-color);
+}
+
+.logo-dark {
+    color: var(--hero-background-color);
+}
+
+.header-link {
+    font-family: var(--title-font);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+    color: var(--dark-color);
+}
+
+.nav-list .header-link:hover,
+.nav-list .header-link:focus {
+    color: var(--pressed-state-color);
+}
+
+.address-list {
+    font-style: normal;
+}
+
+.adress-link {
+    font-family: var(--title-font);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    color: var(--body-text-color);
+}
+.adress-link:hover,
+.adress-link:focus {
+    color: var(--pressed-state-color);
+}
+
+/**
+  |============================
+  | Body
+  |============================
+*/
+body {
+    font-family: var(--title-font);
+    color: var(--body-text-color);
+    background-color: var(--white-background-color);
+    list-style: none;
+    text-decoration: none;
+}
+
+/**
+  |============================
+  | Section hero first page
+  |============================
+*/
+.hero-section {
+    background-color: var(--dark-color);
+}
+
+.hero-title {
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: var(--white-background-color);
+}
+
+.hero-button {
+    font-family: var(--title-font);
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: var(--white-background-color);
+    background-color: var(--primery-brand-color);
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    color: var(--pressed-state-color);
+    background-color: var(--pressed-state-color);
+}
+/**
+  |============================
+  | Section benefits first page
+  |============================
+*/
+.main-page-title {
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--modal-overlay-color);
+}
+
+.main-page-text {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--body-text-color);
+}
+
+/**
+  |============================
+  | Secction 'Doing' first page
+  |============================
+*/
+.page-title {
+    font-family: var(--title-font);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--hero-background-color); 
+}
+/**
+  |============================
+  | Team section
+  |============================
+*/
+.team-section {
+    background-color: var(--light-color);
+}
+
+.team-list {
+    background-color: var(--white-background-color);
+}
+/**
+  |============================
+  | Buttons
+  |============================
+*/
+.filter-button {
+    font-family: var(--title-font);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    list-style: none;
+    cursor: pointer;
+    color: var(--primery-brand-color);
+    background-color: var(--light-color);
+}
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--white-background-color);
+    background: var(--pressed-state-color);
+}
+
+/**
+  |============================
+  | Fotter
+  |============================
+*/
+.footer {
+    background-color: var(--hero-background-color);
+}
+
+.logo-white {
+    color: var(--light-color);
+}
+
+.text-footer {
+    font-family: var(--title-font);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: var(--light-color); 
+}
