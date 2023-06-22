@@ -32,12 +32,6 @@ ul, ol {
 	margin-bottom: 0;
 	padding-left: 0;
 }
-
-.page-container {
-  width: 1158px;
-  margin: 0 15px;
-  min-height: 100vh;
-}
 /**
   |============================
   | Header styles
@@ -55,6 +49,7 @@ ul, ol {
 .header .container {
     border-bottom: 1px solid var(--accent-color);
 }
+
 .header-nav {
     display: flex;
     align-items: center;
@@ -147,6 +142,12 @@ body {
     padding: 188px 0;
 }
 
+.hero {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .hero-title {
     font-family: var(--title-font);
     font-style: normal;
@@ -193,6 +194,12 @@ body {
     visibility: hidden;
 }
 
+.benefits {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .benefits-section {
     padding: 120px 0;
 }
@@ -234,6 +241,12 @@ body {
     padding-bottom: 120px;
 }
 
+.doing {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .page-title {
     font-family: var(--title-font);
     font-weight: 700;
@@ -267,6 +280,12 @@ body {
     padding: 120px 0;
 }
 
+.team {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
 .team-card-list {
  display: flex;
  gap: 24px;
@@ -279,7 +298,7 @@ body {
 }
 
 .team-container {
-    padding: 36px 16px;
+    padding: 32px 16px;
 }
 
 .team-title {
@@ -293,18 +312,37 @@ body {
 
 /**
   |============================
-  | Buttons
+  | Portfolio page
   |============================
 */
-
-.portfolio-title {
-    visibility: hidden;
+.portfolio-main {
+    padding: 96px 0 120px 0;
 }
+
+.portfolio-page {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
 
 .button-list {
     display: flex;
+    justify-content: center;
     gap: 24px;
-    padding: 69px 271px 72px;
+    margin-bottom: 72px;
 }
 
 .filter-button {
@@ -317,7 +355,7 @@ body {
     cursor: pointer;
     color: var(--primery-brand-color);
     background-color: var(--light-color);
-    border: 0;
+    border: 1px solid var(--accent-color);
     border-radius: 4px;
     padding: 12px 24px;
 }
@@ -326,25 +364,25 @@ body {
 .filter-button:focus {
     color: var(--white-background-color);
     background-color: var(--pressed-state-color);
+    border: 1px solid transparent;
 }
 
 .portfolio-img {
     display: flex;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
     row-gap: 48px;
     padding-bottom: 120px;
 }
 
-.portfolio-card {
-    width: calc((100% - 24px) / 3);
+.portfolio-item {
+    width: calc((100% - 48px) / 3);
 }
 
 .text-card {
-    padding: 32px 54px 32px 16px;
-    border-left: 1px solid var(--accent-color);
-    border-right: 1px solid var(--accent-color);
-    border-bottom: 1px solid var(--accent-color);
+    padding: 32px 16px;
+    border: 1px solid var(--accent-color);
+    border-top: none;
 }
 
 img {
@@ -362,6 +400,12 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     padding: 100px 0;
+}
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
 }
 
 .footer-logo {
