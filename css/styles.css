@@ -44,10 +44,11 @@ ul, ol {
     margin: 0 auto;
     padding: 0 15px 0 15px;
     justify-content: space-between;
+    border-bottom: 1px solid var(--accent-color);
 }
 
 .header .container {
-    border-bottom: 1px solid var(--accent-color);
+    width: 1158px;
 }
 
 .header-nav {
@@ -140,6 +141,7 @@ body {
 .hero-section {
     background-color: var(--dark-color);
     padding: 188px 0;
+    width: 1158px;
 }
 
 .hero {
@@ -190,10 +192,6 @@ body {
   | Section benefits first page
   |============================
 */
-.lorem-title {
-    visibility: hidden;
-}
-
 .benefits {
     width: 1158px;
     padding: 0 15px;
@@ -202,6 +200,7 @@ body {
 
 .benefits-section {
     padding: 120px 0;
+    width: 1158px;
 }
 
 .benefits-list {
@@ -239,6 +238,7 @@ body {
 */
 .we-doing {
     padding-bottom: 120px;
+    width: 1158px;
 }
 
 .doing {
@@ -278,6 +278,7 @@ body {
 .team-section {
     background-color: var(--light-color);
     padding: 120px 0;
+    width: 1158px;
 }
 
 .team {
@@ -400,6 +401,7 @@ img {
     flex-direction: column;
     justify-content: flex-start;
     padding: 100px 0;
+    
 }
 
 .container {
