@@ -41,13 +41,11 @@ ul, ol {
     display: flex;
     width: 1158px;
     align-items: center;
-    margin: 0 auto;
-    padding: 0 15px 0 15px;
     justify-content: space-between;
     border-bottom: 1px solid var(--accent-color);
 }
 
-container {
+.container {
     width: 1158px;
     padding: 0 15px;
     margin: 0 auto;
@@ -69,7 +67,7 @@ container {
     justify-content: space-between;
 }
 
-.address-list {
+.address-list .list {
     display: flex;
     justify-content: space-between;
     gap: 40px;
@@ -320,6 +318,7 @@ body {
 */
 .portfolio-main {
     padding: 96px 0 120px 0;
+    width: 1158px;
 }
 
 .portfolio-page {
