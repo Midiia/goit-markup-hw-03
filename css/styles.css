@@ -67,7 +67,7 @@ ul, ol {
     justify-content: space-between;
 }
 
-.address-list .list {
+.address-list {
     display: flex;
     justify-content: space-between;
     gap: 40px;
