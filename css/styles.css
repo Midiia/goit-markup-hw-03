@@ -14,17 +14,59 @@
     --modal-background: #FCFCFC;
 }
 
-/**
-  |============================
-  | Header styles
-  |============================
-*/
 .link {
     text-decoration: none;
 }
 
 .list {
     list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+ul, ol {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+}
+
+.page-container {
+  width: 1158px;
+  margin: 0 15px;
+  min-height: 100vh;
+}
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+.header {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--accent-color);
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.address-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
 }
 
 .link-logo {
@@ -36,6 +78,7 @@
     text-transform: uppercase;
     cursor: pointer;
     color: var(--primery-brand-color);
+    margin-right: 76px;
 }
 
 .logo-dark {
@@ -57,10 +100,6 @@
     color: var(--pressed-state-color);
 }
 
-.address-list {
-    font-style: normal;
-}
-
 .adress-link {
     font-family: var(--title-font);
     font-size: 16px;
@@ -73,6 +112,7 @@
 .adress-link:focus {
     color: var(--pressed-state-color);
 }
+
 
 /**
   |============================
@@ -105,9 +145,14 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     color: var(--white-background-color);
+    padding-top: 188px;
+    padding-bottom: 48px;
+    margin: 0 auto;
+    width: 496px;
 }
 
 .hero-button {
+    display: inline-block;
     font-family: var(--title-font);
     font-style: normal;
     font-weight: 500;
@@ -117,11 +162,16 @@ body {
     cursor: pointer;
     color: var(--white-background-color);
     background-color: var(--primery-brand-color);
+    border: 0px solid var(--primery-brand-color);
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    margin: 0 480px 188px;
 }
 
 .hero-button:hover,
 .hero-button:focus {
-    color: var(--pressed-state-color);
+    color: var(--modal-background);
     background-color: var(--pressed-state-color);
 }
 /**
@@ -129,6 +179,17 @@ body {
   | Section benefits first page
   |============================
 */
+.lorem-title {
+    display: none;
+}
+
+.benefits-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding-top: 120px;
+}
+
 .main-page-title {
     font-family: var(--title-font);
     font-weight: 500;
@@ -136,6 +197,7 @@ body {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--modal-overlay-color);
+    padding-bottom: 8px;
 }
 
 .main-page-text {
@@ -147,7 +209,6 @@ body {
     letter-spacing: 0.02em;
     color: var(--body-text-color);
 }
-
 /**
   |============================
   | Secction 'Doing' first page
@@ -161,25 +222,60 @@ body {
     text-align: center;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    color: var(--hero-background-color); 
+    color: var(--hero-background-color);
+    margin: 0 auto;
+    padding: 120px 0 36px; 
 }
+
+.image-doing-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 36px 0 120px;
+}
+
 /**
   |============================
   | Team section
   |============================
 */
+
 .team-section {
     background-color: var(--light-color);
+}
+
+.team-card-list {
+ display: flex;
+ gap: 24px;
+ padding-top: 36px;
+ padding-bottom: 120px;
 }
 
 .team-list {
     background-color: var(--white-background-color);
 }
+
+.team-container {
+    padding: 36px 16px;
+    text-align: center;
+}
+
 /**
   |============================
   | Buttons
   |============================
 */
+
+.portfolio-title {
+    visibility: hidden;
+}
+
+.button-list {
+    display: flex;
+    gap: 24px;
+    padding: 69px 271px 72px;
+}
+
 .filter-button {
     font-family: var(--title-font);
     font-weight: 500;
@@ -190,11 +286,38 @@ body {
     cursor: pointer;
     color: var(--primery-brand-color);
     background-color: var(--light-color);
+    border: 0;
+    border-radius: 4px;
+    padding: 12px 24px;
 }
+
 .filter-button:hover,
 .filter-button:focus {
     color: var(--white-background-color);
-    background: var(--pressed-state-color);
+    background-color: var(--pressed-state-color);
+}
+
+.portfolio-img {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+    row-gap: 48px;
+    padding-bottom: 120px;
+}
+
+.portfolio-card {
+    width: calc((100% - 24px) / 3);
+}
+
+.text-card {
+    padding: 32px 54px 32px 16px;
+    border-left: 1px solid var(--accent-color);
+    border-right: 1px solid var(--accent-color);
+    border-bottom: 1px solid var(--accent-color);
+}
+
+img {
+	display: block;
 }
 
 /**
@@ -204,6 +327,10 @@ body {
 */
 .footer {
     background-color: var(--hero-background-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
 }
 
 .logo-white {
@@ -216,5 +343,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: var(--light-color); 
+    color: var(--light-color);
+    padding: 16px 864px 100px 0;
 }
