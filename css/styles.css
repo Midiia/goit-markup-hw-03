@@ -50,6 +50,10 @@ ul, ol {
     border-bottom: 1px solid var(--accent-color);
 }
 
+.header-container{
+    display: flex;
+    align-items: center;
+}
 .header-nav {
     display: flex;
     align-items: center;
@@ -64,12 +68,6 @@ ul, ol {
     align-items: center;
     gap: 40px;
     justify-content: space-between;
-}
-
-.address-list {
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
 }
 
 .link-logo {
@@ -103,6 +101,15 @@ ul, ol {
 .nav-list .header-link:hover,
 .nav-list .header-link:focus {
     color: var(--pressed-state-color);
+}
+
+.adress {
+    margin-left: auto;
+}
+
+.adress-list {
+    display: flex;
+    gap: 40px;
 }
 
 .adress-link {
