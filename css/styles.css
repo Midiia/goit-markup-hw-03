@@ -32,6 +32,12 @@ ul, ol {
 	margin-bottom: 0;
 	padding-left: 0;
 }
+
+.container {
+    width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
 /**
   |============================
   | Header styles
@@ -39,16 +45,9 @@ ul, ol {
 */
 .header {
     display: flex;
-    width: 1158px;
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid var(--accent-color);
-}
-
-.container {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
 }
 
 .header-nav {
@@ -118,8 +117,6 @@ ul, ol {
 .adress-link:focus {
     color: var(--pressed-state-color);
 }
-
-
 /**
   |============================
   | Body
@@ -132,7 +129,6 @@ body {
     list-style: none;
     text-decoration: none;
 }
-
 /**
   |============================
   | Section hero first page
@@ -141,13 +137,6 @@ body {
 .hero-section {
     background-color: var(--dark-color);
     padding: 188px 0;
-    width: 1158px;
-}
-
-.hero {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
 }
 
 .hero-title {
@@ -160,8 +149,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--white-background-color);
     max-width: 496px;
-    margin: 0 auto;
-    padding-bottom: 48px;
+    margin: 0 auto 48px;
 }
 
 .hero-button {
@@ -192,15 +180,8 @@ body {
   | Section benefits first page
   |============================
 */
-.benefits {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 .benefits-section {
     padding: 120px 0;
-    width: 1158px;
 }
 
 .benefits-list {
@@ -238,15 +219,7 @@ body {
 */
 .we-doing {
     padding-bottom: 120px;
-    width: 1158px;
 }
-
-.doing {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
-}
-
 .page-title {
     font-family: var(--title-font);
     font-weight: 700;
@@ -278,13 +251,6 @@ body {
 .team-section {
     background-color: var(--light-color);
     padding: 120px 0;
-    width: 1158px;
-}
-
-.team {
-    width: 1158px;
-    padding: 0 15px;
-    margin: 0 auto;
 }
 
 .team-card-list {
@@ -310,7 +276,6 @@ body {
 .team-text {
     text-align: center;
 }
-
 /**
   |============================
   | Portfolio page
@@ -318,7 +283,6 @@ body {
 */
 .portfolio-main {
     padding: 96px 0 120px 0;
-    width: 1158px;
 }
 
 .portfolio-page {
@@ -401,8 +365,7 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    padding: 100px 0;
-    width: 1158px;    
+    padding: 100px 0;  
 }
 
 
